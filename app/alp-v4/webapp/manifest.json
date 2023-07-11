@@ -125,7 +125,7 @@
                             "controlConfiguration": {
                                 "@com.sap.vocabularies.UI.v1.LineItem": {
                                     "tableSettings": {
-                                        "type": "AnalyticalTable",
+                                        "type": "ResponsiveTable",
                                         "selectionMode": "None"
                                     }
                                 },
@@ -154,16 +154,8 @@
                             "views": {
                                 "paths": [
                                     {
-                                        "primary": [
-                                            {
-                                                "annotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant"
-                                            }
-                                        ],
-                                        "secondary": [
-                                            {
-                                                "annotationPath": "com.sap.vocabularies.UI.v1.LineItem"
-                                            }
-                                        ],
+                                        "primary": [{ "annotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant"}],
+                                        "secondary": [{"annotationPath": "com.sap.vocabularies.UI.v1.LineItem"}],
                                         "defaultPath": "both"
                                     }
                                 ]
