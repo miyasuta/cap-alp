@@ -12,7 +12,7 @@
 |**Application Title**<br>App Title|
 |**Namespace**<br>miyasuta|
 |**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>1.112.1|
+|**UI5 Version**<br>1.128.0|
 |**Enable Code Assist Libraries**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>BooksAnalytics|
