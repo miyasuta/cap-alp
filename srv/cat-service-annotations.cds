@@ -33,7 +33,10 @@ annotate CatalogService.BooksAnalytics with @(
     Name : 'totalStock',
     ![@Common.Label]: 'Total stock'
   },
-);
+  Aggregation.CustomAggregate #stock: 'Edm.Int32'
+){
+  stock @Analytics.Measure @Aggregation.default: #SUM
+};
 
 //2. Main chart
 annotate CatalogService.BooksAnalytics with @(
@@ -65,6 +68,9 @@ annotate CatalogService.BooksAnalytics with @(
   },
   UI.PresentationVariant: {
     $Type : 'UI.PresentationVariantType',
+    Total: [
+      stock
+    ],
     Visualizations : [
         '@UI.Chart',
     ],
